@@ -1,0 +1,120 @@
+/* Learners.css */
+
+
+/* Learners.css */
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ddd;
+}
+
+/* Style the login button */
+.login-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #fe9e0d;
+}
+
+/* Style the search container */
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-container input[type=text] {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.search-container button {
+  padding: 6px 10px;
+  margin-left: 16px;
+  background-color: #fe9e0d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.search-container button:hover {
+  background-color: #45a049;
+}
+
+/* Style the footer */
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ddd;
+}
+
+/* Style the image wrapper */
+.image-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+}
+
+/* Style the media (image) */
+.media {
+  position: relative;
+  width: 88%; /* Adjust the width as needed */
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.media img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.media:hover {
+  transform: scale(1.1);
+}
+
+.media:hover .overlay {
+  opacity: 1;
+}
+
+/* Style the image details */
+.image-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
